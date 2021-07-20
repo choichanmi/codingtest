@@ -1,4 +1,3 @@
-# hello-world
-open software platform class project
+# coding Test
 
-1602119 
+코딩테스트 준비하기
