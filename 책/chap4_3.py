@@ -11,18 +11,13 @@ count=1
 turn_time=0
 while True:
     d=(d+3)%4 #왼쪽으로 회전
-    print(d,'방향')
-    print(mapinfo)
     current_place=[place[0]+steps[d][0],place[1]+steps[d][1]]
-    print(current_place)
-    print(mapinfo[current_place[0]][current_place[1]])
     #이동가능한 경우
     if mapinfo[current_place[0]][current_place[1]]==0:
         mapinfo[current_place[0]][current_place[1]]=1
         place=current_place
         count+=1
         turn_time=0
-        print(11111)
         continue
     #이동불가능한 경우
     else:
